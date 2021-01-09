@@ -12,8 +12,11 @@ def permutation(n, r):
     return result 
 
 def combination(n, r):
+    if r == 0:
+        return 1
     result = int(permutation(n, r)/math.factorial(r))
     return result
 
-print(combination(7, 1) * combination(6, 2))
-print(combination(13, 3))
+print(combination(200, 3))
+print(combination(200, 4))
+print(combination(200, 5))
